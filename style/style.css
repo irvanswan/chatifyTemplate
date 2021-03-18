@@ -11,7 +11,7 @@
     outline-style: none;
     font-size: 0.5em;
 }
-.container{
+.splashscreen{
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -30,13 +30,12 @@
     margin-bottom: 5vh;
     border-radius: 20px;
     min-height: 100vh;
-    font-size: 0.7rem;
 }
 .form-login .text-start{
     font-weight: 500;
 }
 .text-plus{
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 0;
 }
 .text-line {
@@ -79,8 +78,7 @@ button.btn-purple:hover{
     outline: none;
     border: none;
     background: none;
-    font-size: 1em;
-    top: -25px;
+    top: -40px;
     cursor: pointer;
     padding: 0;
 }
@@ -105,7 +103,6 @@ button.btn-purple:hover{
 .btn-purple{
     border-radius: 20px;
     font-weight: 500;
-    font-size: 1em;
     color: white;
     background-color: var(--purple);
     transition: 1.0s;
@@ -116,7 +113,6 @@ button.btn-purple:hover{
     border: 1px solid var(--purple);
     transition: 1.0s;
     font-weight: 500;
-    font-size: 1em;
 }
 .text-black{
     text-decoration: none;
