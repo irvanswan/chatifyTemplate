@@ -1,0 +1,139 @@
+:root{
+    --purple : #7E98DF;
+    --lightpurple :#99b0f0;
+}
+.chat-list{
+    height: 100vh;
+}
+.search{
+    border: none !important;
+    outline: none !important;
+    outline-style: none;
+    font-size: 0.5em;
+}
+.container{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.filter{
+    margin: 0;
+    padding: 0;
+}
+.filter:active{
+    background-color: var(--purple);
+    
+}
+.form-login{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 20px;
+    min-height: 100vh;
+    font-size: 0.7rem;
+}
+.form-login .text-start{
+    font-weight: 500;
+}
+.text-plus{
+    font-size: 1em;
+    font-weight: 0;
+}
+.text-line {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000000 1px;
+    padding: 1vh 10px;
+}
+input.text-line:focus, input.text-password:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: none;
+}
+button.btn-outline-purple:hover{
+    color: white;
+    background-color: var(--purple);
+}
+button.btn-purple:hover{
+    color: black;
+    background-color: var(--lightpurple);
+}
+.back-btn{
+    z-index: 1;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--purple);
+}
+.toogle-btn{
+    position: relative;
+    z-index: 1;
+    float: right;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1em;
+    top: -25px;
+    cursor: pointer;
+    padding: 0;
+}
+.text-password{
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000000 1px;
+    margin-bottom: 1vh;
+    letter-spacing: 0.5em;
+}
+.text-purple{
+    color: var(--purple);
+    font-weight:500;
+    text-decoration: none;
+}
+.btn-purple{
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    background-color: var(--purple);
+    transition: 1.0s;
+}
+.btn-outline-purple{
+    border-radius: 20px;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    transition: 1.0s;
+    font-weight: 500;
+    font-size: 1em;
+}
+.text-black{
+    text-decoration: none;
+    color: #000;
+}
+.bg-purple{
+    background-color: var(--purple);
+}
+@media (max-width: 1024px){
+    .form-login{
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
+    }
+}
+@media (max-width: 768px){
+    main{
+        display: none;
+    }
+}
