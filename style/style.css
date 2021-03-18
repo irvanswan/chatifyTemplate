@@ -121,6 +121,23 @@ button.btn-purple:hover{
 .bg-purple{
     background-color: var(--purple);
 }
+.txt-status{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.txt-status:active, txt.txt-status a:hover{
+    background-color: var(--purple);
+    border-radius: 10px;
+    width: 100%;
+}
+.bg-circle{
+    background-color: var(--purple);
+    border-radius: 100%;
+    padding: 1em;
+    width: 200px;
+    height: 200px;
+}
 @media (max-width: 1024px){
     .form-login{
         margin: 0;
