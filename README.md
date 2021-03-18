@@ -1,4 +1,6 @@
 ## Chatify Template
+> This is template website chatify using custom css and bootstrap
+
 > REQUIREMENT
 
 1. [Bootstrap](https://getbootstrap.com/)
