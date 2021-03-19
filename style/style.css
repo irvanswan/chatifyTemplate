@@ -17,6 +17,11 @@
     justify-content: center;
     height: 100vh;
 }
+.active{
+    background-color: var(--purple);
+    width: 50%;
+    border-radius: 50px;
+}
 .filter{
     margin: 0;
     padding: 0;
@@ -54,6 +59,7 @@ input.text-line:focus, input.text-password:focus{
     outline: none;
     box-shadow: none;
     border-color: none;
+    background: none;
 }
 button.btn-outline-purple:hover{
     color: white;
@@ -101,14 +107,12 @@ button.btn-purple:hover{
     text-decoration: none;
 }
 .btn-purple{
-    border-radius: 20px;
     font-weight: 500;
     color: white;
     background-color: var(--purple);
     transition: 1.0s;
 }
 .btn-outline-purple{
-    border-radius: 20px;
     color: var(--purple);
     border: 1px solid var(--purple);
     transition: 1.0s;
