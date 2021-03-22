@@ -7,38 +7,35 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="style/style.css" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/94c696b415.js" crossorigin="anonymous"></script>
-
-    <meta name="loginpage" content="login page">
+    <meta name="description" content="login page">
     <title>Login</title>
   </head>
-  <body class="bg-light">
 
+  <body class="bg-light">
     <section class="container-fluid">
-      <main class="row justify-content-center">
-        <form class="form-login card bg-white p-5 col-md-4">
-          <h4 class="text-center text-purple my-1">Login</h4>
-          <span class="text-start my-4">Hi, Welcome back!</span>
+      <div class="row justify-content-center">
+        <form class="auth card bg-white p-5 shadow-sm col-md-4">
+          <h4 class="text-center text-purple fw-bold">Login</h4>
+          <span class="text-start mt-4 mb-3 fw-bold">Hi, Welcome back!</span>
+
           <div class="my-1">
-            <label for="exampleInputEmail1" class="form-text">Email</label>
-            <input type="email" class="form-control text-line" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            <label for="inputEmail" class="form-text">Email</label>
+            <input type="email" class="form-control text-line" id="inputEmail" name="inputEmail">
           </div>
+
           <div class="my-1">
-            <label for="exampleInputPassword1" class="form-text">Password</label>
-            <input type="password" class="form-control text-password" id="exampleInputPassword1">
-            <button class="btn-lg toogle-btn align-content-md-end" name="toogle"><i class="fas fa-eye"></i></button>
+            <label for="inputPassword" class="form-text">Password</label>
+            <input type="password" class="form-control text-password" name="inputPassword" id="inputPassword">
+            <button class="btn-lg toogle-btn align-content-md-end" name="toogle"><img src="./style/images/eye.svg" alt="..."/></button>
           </div>
-          <a href="forgotPassword.html" class="form-text text-end my-3 text-purple"><span>Forgot Password ?</span></a>
-            <a href="chatlist.html" class="btn btn-lg btn-purple rounded-pill my-1" type="button">Login</a>
-            <div class="d-flex flex-sm-row my-2 justify-content-between">
-              <div class="p-1"> - </div>
-              <div class="p-1 text-center"><span class="text-muted mb-1">Login with</span></div>
-              <div class="p-1"> - </div>
-            </div>
-            <button class="btn btn-lg btn-outline-purple rounded-pill my-3" type="button" name="google"><i class="fab fa-google"></i> Google</button>
-            <span class="mb-3 text-center">Don't have account ? <a class="text-purple" href="register.html" name="sign-up">Sign Up</a></span>
-        </form>
-      </main>
+          
+            <a href="forgotPassword.html" class="text-end mb-3 text-purple"><span>Forgot Password ?</span></a>
+            <a href="chatlist.html" class="btn btn-lg btn-purple rounded-pill my-3 py-3" type="button">Login</a>
+            <span class="text-muted text-center label">Login with</span>
+            <button class="btn btn-lg btn-outline-purple rounded-pill my-3 py-3" type="button" name="btnGoogle" id="btnGoogle"><img src="./style/images/google.svg" alt="..."/> Google</button>
+            <span class="mb-1 text-center">Don't have account ? <a class="text-purple fw-bold" href="register.html" name="sign-up">Sign Up</a></span>
+          </form>
+      </div>
     </section>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
