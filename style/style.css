@@ -1,33 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+/* variable color root */
 :root{
     --purple : #7E98DF;
     --lightpurple :#99b0f0;
 }
+
+/* Set font pada content di body */
 body{
     font-family: 'Rubik', sans-serif;
 }
 
+/* background color purple */
 .bg-purple{
     background-color: var(--purple);
 }
-.bg-circle{
-    background-color: var(--purple);
-    border-radius: 100%;
-    padding: 1em;
-    width: 200px;
-    height: 200px;
-}
+
+/* Splash screen */
 .splashscreen{
 	display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
+
+.list{
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.list::-webkit-scrollbar{
+    display: none;
+}
+/* navigation active */
 .active{
     background-color: var(--purple);
     width: 50%;
     border-radius: 50px;
 }
+
+/* form register, form login, form forgot password */
 .auth{
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -35,11 +46,9 @@ body{
     min-height: 100vh;
     border: none;
 }
-.text-plus{
-    font-size: 2em;
-    font-weight: 0;
-}
-.text-line {
+
+/* input field line */
+.input-line {
     width: 100%;
     background-color: transparent;
     border-radius: 0;
@@ -51,6 +60,13 @@ body{
     border-bottom: solid #000000 1px;
     padding: 1vh 10px;
 }
+
+/* efek input password */
+.password{
+    letter-spacing: 0.5em;
+}
+
+/* styling icon back */
 .back-btn{
     z-index: 1;
     outline: none;
@@ -59,6 +75,8 @@ body{
     cursor: pointer;
     color: var(--purple);
 }
+
+/* styling icon eye*/
 .toogle-btn{
     position: relative;
     z-index: 1;
@@ -71,58 +89,72 @@ body{
     padding: 0;
     margin: 0;
 }
-.text-password{
-    width: 100%;
-    border-radius: 0;
-    background-color: transparent;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #000000 1px;
-    margin-bottom: 1vh;
-    letter-spacing: 0.5em;
+/* styling side */
+.side{
+    float: left;
+    min-height: 100vh;
 }
+article{
+ min-height: 100vh;
+}
+/* styling text color purple */
 .text-purple{
     color: var(--purple);
     text-decoration: none;
 }
+
+/* button bakcground purple */
 .btn-purple{
     color: white;
     background-color: var(--purple);
     transition: 1.0s;
+    font-weight: 600;
 }
+
+/* button outline purple */
 .btn-outline-purple{
     color: var(--purple);
     border: 1px solid var(--purple);
     transition: 1.0s;
+    font-weight: 600;
 }
-input.text-line:focus, input.text-password:focus{
-    outline: none;
-    box-shadow: none;
-    border-color: none;
+
+.text-danger{
+    fill: red;
+}
+
+/* input-line focus */
+input.input-line:focus{
+    outline: 0 !important;
+    box-shadow: none !important;
     background: none !important;
 }
+
+/* button outline purple hover */
 .btn-outline-purple:hover{
     color: white;
     background-color: var(--purple);
 }
+
+/* button puprle hover */
 .btn-purple:hover{
     color: black;
     background-color: var(--lightpurple);
 }
 
+/* media on layar 1024 pixel */
 @media (max-width: 1024px){
     .auth{
         margin: 0;
         padding: 0;
         min-height: 100vh;
+        min-width: 60vw;
         border-radius: 0px;
         overflow: hidden;
     }
 }
-@media (max-width: 768px){
+/* media on layar maximal 768 pixel */
+@media (max-width: 720px){
     main{
         display: none;
     }
