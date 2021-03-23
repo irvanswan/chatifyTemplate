@@ -15,6 +15,10 @@ body{
     background-color: var(--purple);
 }
 
+.icon{
+    margin: 0;
+    padding: 0;
+}
 /* Splash screen */
 .splashscreen{
 	display: flex;
@@ -26,6 +30,7 @@ body{
 .list{
     overflow-y: auto;
     max-height: 100vh;
+    padding-bottom: 20vh;
 }
 
 .list::-webkit-scrollbar{
