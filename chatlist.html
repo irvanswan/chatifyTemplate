@@ -10,107 +10,52 @@
     <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
     <link href="style/style.css" rel="stylesheet"/>
-    <meta name="description" content="chat history page">
+    <meta name="description" content="chat list page">
     <title>Chat List</title>
   </head>
   <body class="bg-light overflow-hidden">
     <section class="container-fluid">
         <div class="row">
             <aside class="col-md-3 px-4 side bg-white py-3">
-                <div class="d-flex align-items-center mb-3 mt-3">
-                    <a href="chatlist.html" class='ps-0 float-md-start btn-lg back-btn'><img src="./style/images/back.svg" alt="..."/></a>
-                    <h4 class="flex-grow-1 text-center text-purple mt-2">Call History</h4>
+                <div class="d-flex align-items-center mt-4 mb-5">
+                    <h4 class="flex-grow-1 text-start text-purple fw-bold">Telegram</h4>
+                    <a href="chatlist.html" class='ps-0 float-md-end'><img src="./style/images/Menu.svg" alt="..."/></a>
                 </div>
-                <div class="list">
-                <div class="d-flex-grow-1 row my-3">
-                    <div class="col-4">
-                        <img src="./style/images/photos/photo2.png" class="img-fluid" alt="..."/>
+                <div class="d-flex align-items-center my-3">
+                    <div class="input-group input-group-lg align-content-start search-box">
+                        <a href="chatlist.html" class="input-group-text bg-light icon"><img src="./style/images/Search.svg" alt="..." class="img-fluid"/></a>
+                        <input type="text" name="input_search" class="form-control bg-light search-box" placeholder="Type your message..." aria-describedby="basic-addon1">
                     </div>
-                    <div class="col-8">
-                        <div class="d-flex align-items-start row">
-                            <h5 class="fw-bold text-lg-start">Brother</h5>
-                            <span class="flex-grow-1 text-muted text-sm-start"><img src="style/images/Union.svg" class="img-fluid" alt="..."/> 18.02.2020 at 19:30</span>
+                    <a href="chatlist.html" class='ms-3 float-md-end'><img src="./style/images/Plus.svg" alt="..."/></a>
+                </div>
+                <div class="filter m-2">
+                    <div class="d-flex align-items-center my-3 me-3">
+                        <a class="text-black fw-bold me-4 ms-1" aria-current="page" href="#">All</a>
+                        <a class="fw-bold active rounded-pill ms-1 me-4" href="#">Important</a>
+                        <a class="text-black fw-bold ms-1 me-4" href="#">Unread</a>
+                        <a class="text-black fw-bold ms-1 me-4" href="#">Read</a>
+                    </div>
+                </div>
+                <div class="list my-1">
+                    <div class="d-flex-grow-1 row my-3">
+                        <div class="col-4">
+                            <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <div class="d-flex align-items-start row">
+                                <div class="row"></div>
+                                <span class="fw-bold text-lg-start">Calvin Flores <img src="style/images/Bell.svg" class="img-fluid ms-1" alt="..."/></span>
+                                <small class="flex-grow-1 text-purple text-sm-start">Why did you do that?</small>
+                            </div>
+                        </div>
+                        <div class="col-2 mt-2">
+                            <div class="d-flex align-items-start row">
+                                <span class="text-muted text-lg-start">15:20</span>
+                                <small class="text-center bg-purple badge rounded-pill">2</small>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex-grow-1 row my-3">
-                    <div class="col-4">
-                        <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
-                    </div>
-                    <div class="col-8">
-                        <div class="d-flex align-items-start row">
-                            <h5 class="fw-bold text-lg-start">Calvin Flores</h5>
-                            <span class="flex-grow-1 text-danger text-sm-start"><img src="style/images/Union.svg" class="img-fluid" alt="..."/> 18.02.2020 at 13:40</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex-grow-1 row my-3">
-                    <div class="col-4">
-                        <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
-                    </div>
-                    <div class="col-8">
-                        <div class="d-flex align-items-start row">
-                            <h5 class="fw-bold text-lg-start">Calvin Flores</h5>
-                            <span class="flex-grow-1 text-danger text-sm-start"><img src="style/images/Union.svg" class="img-fluid" alt="..."/> 18.02.2020 at 13:40</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex-grow-1 row my-3">
-                    <div class="col-4">
-                        <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
-                    </div>
-                    <div class="col-8">
-                        <div class="d-flex align-items-start row">
-                            <h5 class="fw-bold text-lg-start">Calvin Flores</h5>
-                            <span class="flex-grow-1 text-danger text-sm-start"><img src="style/images/Union.svg" class="img-fluid" alt="..."/> 18.02.2020 at 13:40</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex-grow-1 row my-3">
-                    <div class="col-4">
-                        <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
-                    </div>
-                    <div class="col-8">
-                        <div class="d-flex align-items-start row">
-                            <h5 class="fw-bold text-lg-start">Calvin Flores</h5>
-                            <span class="flex-grow-1 text-danger text-sm-start"><img src="style/images/Union.svg" class="img-fluid" alt="..."/> 18.02.2020 at 13:40</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex-grow-1 row my-3">
-                    <div class="col-4">
-                        <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
-                    </div>
-                    <div class="col-8">
-                        <div class="d-flex align-items-start row">
-                            <h5 class="fw-bold text-lg-start">Calvin Flores</h5>
-                            <span class="flex-grow-1 text-danger text-sm-start"><img src="style/images/Union.svg" class="img-fluid" alt="..."/> 18.02.2020 at 13:40</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex-grow-1 row my-3">
-                    <div class="col-4">
-                        <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
-                    </div>
-                    <div class="col-8">
-                        <div class="d-flex align-items-start row">
-                            <h5 class="fw-bold text-lg-start">Calvin Flores</h5>
-                            <span class="flex-grow-1 text-danger text-sm-start"><img src="style/images/Union.svg" class="img-fluid" alt="..."/> 18.02.2020 at 13:40</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex-grow-1 row my-3">
-                    <div class="col-4">
-                        <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
-                    </div>
-                    <div class="col-8">
-                        <div class="d-flex align-items-start row">
-                            <h5 class="fw-bold text-lg-start">Calvin Flores</h5>
-                            <span class="flex-grow-1 text-danger text-sm-start"><img src="style/images/Union.svg" class="img-fluid" alt="..."/> 18.02.2020 at 13:40</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </aside>
             <main class="col-md-9">
                 <div class="splashscreen">
