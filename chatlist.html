@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CDN CSS -->
-   <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
-   <!--  internal bootstrap css  -->
-    <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <!--  internal bootstrap css  -->
+    <!-- <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet"/> -->
 
     <link href="style/style.css" rel="stylesheet"/>
     <meta name="description" content="chat list page">
@@ -16,127 +16,196 @@
   <body class="bg-light overflow-hidden">
     <section class="container-fluid">
         <div class="row">
-            <aside class="col-md-3 px-4 bg-white py-3">
+            <aside class="col-sm-3 d-block col-md-5 d-block col-lg-3 d-block px-4 bg-white">
                 <div class="d-flex align-items-center mt-4 mb-5">
-                    <div id="menu">
-                        <div class="d-flex flex-grow-1 mb-3 bg-purple float-md-start">
-                            <a href="#news">News</a>
-                            <a href="#contact">Contact</a>
-                            <a href="#about">About</a>
+                    <div id="menu" class="flex-grow-1 me-5">
+                        <div class="d-flex justify-content-between mb-2 p-3 bg-purple rounded-pill">
+                            <a href="#news"><img src="style/images/add.svg" class="img-fluid" alt="..."/></a>
+                            <a href="#news"><img src="style/images/Lock.svg" class="img-fluid" alt="..."/></a>
+                            <a href="#news"><img src="style/images/channel.svg" class="img-fluid" alt="..."/></a>
                         </div>
                     </div>
                     <span onclick="myFunction()" class="text-purple flex-grow-1 text-start" id="chatify"><h4>Chatify</h4></span>
                     <div class='ps-0 float-md-end'><img src="./style/images/Menu.svg" alt="..."/></div>
+                    
                 </div>
-                <div class="d-flex align-items-center my-3">
-                    <div class="input-group input-group-lg align-content-start">
-                        <span class="input-group-text bg-light search-box"><img src="./style/images/Search.svg" alt="..." class="icon img-fluid"/></span>
-                        <input type="text" name="input_search" class="form-control bg-light search-box" placeholder="Type your message..." aria-describedby="basic-addon1">
+                <div class="d-flex align-items-center m-1">
+                    <div class="input-group w-100 h-100">
+                        <img src="./style/images/Search.svg" class="input-group-text search-box icon bg-light img-fluid" id="basic-addon1" alt="...">
+                        <input type="text" class="form-control search-box field bg-light " placeholder="Type your message..." aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class='ms-3 float-md-end'><img src="./style/images/Plus.svg" alt="..."/></div>
                 </div>
-                <div class="filter m-2">
+                <div class="filter">
                     <div class="d-flex align-items-center my-3 me-3">
-                        <span class="text-black fw-bold mx-4" aria-current="page">All</span>
-                        <span class="fw-bold active rounded-pill mx-4">Important</span>
-                        <span class="text-black fw-bold mx-4">Unread</span>
-                        <span class="text-black fw-bold mx-4">Read</span>
+                        <small class="active bg-purple rounded-pill fw-bold me-4" aria-current="page">All</small>
+                        <small class="text-black fw-bold mx-4">Important</small>
+                        <small class="text-black fw-bold mx-4">Unread</small>
+                        <small class="text-black fw-bold ms-4">Read</small>
                     </div>
                 </div>
                 <div class="list mb-5">
-                    <div class="d-flex flex-row row my-3">
-                        <div class="col-4">
+                    <div class="d-flex flex-row row my-3 me-0">
+                        <div class="col-4 col-lg-4">
                             <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
                         </div>
-                        <div class="col-6 my-3">
-                            <div class="d-flex flex-row">
-                                <span class="fw-bold text-lg-start">Theresa Webb</span>
-                                <img src="style/images/Bell.svg" class="img-fluid ms-1" alt="..."/>
+                        <div class="col-8 col-lg-8">
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-2">
+                                    <div class="d-flex flex-row">
+                                        <span class="fw-bold text-lg-start">Theresa Webb <img src="style/images/Bell.svg" class="img-fluid" alt="..."/></span>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <small class="text-muted text-lg-start mb-1">15:20</small>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="text-purple text-sm-start">Why did you do that?</span>
-                        </div>
-                        <div class="col-2 my-3">
-                            <div class="d-flex flex-column bd-highlight mb-3">
-                                <span class="text-muted text-lg-start">15:20</span>
-                                <span class="bg-purple-icon"> 2 </span>
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-1">
+                                    <div class="d-flex flex-row">
+                                        <small class="text-purple text-sm-start">Why did you do that?</small>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <span class="bg-purple-icon">2</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-row row my-3">
-                        <div class="col-4">
-                            <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
+
+                    <div class="d-flex flex-row row my-3 me-0">
+                        <div class="col-4 col-lg-4">
+                            <img src="./style/images/photos/photo2.png" class="img-fluid" alt="..."/>
                         </div>
-                        <div class="col-6 my-3">
-                            <div class="d-flex flex-row">
-                                <span class="fw-bold text-lg-start">Theresa Webb</span>
-                                <img src="style/images/Bell.svg" class="img-fluid ms-1" alt="..."/>
+                        <div class="col-8 col-lg-8">
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-2">
+                                    <div class="d-flex flex-row">
+                                        <span class="fw-bold text-lg-start">Brother</span>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <small class="text-muted text-start">Yesterday</small>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="text-purple text-sm-start">Why did you do that?</span>
-                        </div>
-                        <div class="col-2 my-3">
-                            <div class="d-flex flex-column bd-highlight mb-3">
-                                <span class="text-muted text-lg-start">15:20</span>
-                                <span class="bg-purple-icon"> 2 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row row my-3">
-                        <div class="col-4">
-                            <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
-                        </div>
-                        <div class="col-6 my-3">
-                            <div class="d-flex flex-row">
-                                <span class="fw-bold text-lg-start">Theresa Webb</span>
-                                <img src="style/images/Bell.svg" class="img-fluid ms-1" alt="..."/>
-                            </div>
-                            <span class="text-purple text-sm-start">Why did you do that?</span>
-                        </div>
-                        <div class="col-2 my-3">
-                            <div class="d-flex flex-column bd-highlight mb-3">
-                                <span class="text-muted text-lg-start">15:20</span>
-                                <span class="bg-purple-icon"> 2 </span>
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-1">
+                                    <div class="d-flex flex-row">
+                                        <small class="text-muted text-sm-start">Ok. Good bay!</small>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-row row my-3">
-                        <div class="col-4">
-                            <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
+
+                    <div class="d-flex flex-row row my-3 me-0">
+                        <div class="col-4 col-lg-4">
+                            <img src="./style/images/photos/photo4.png" class="img-fluid" alt="..."/>
                         </div>
-                        <div class="col-6 my-3">
-                            <div class="d-flex flex-row">
-                                <span class="fw-bold text-lg-start">Theresa Webb</span>
-                                <img src="style/images/Bell.svg" class="img-fluid ms-1" alt="..."/>
+                        <div class="col-8 col-lg-8">
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-2">
+                                    <div class="d-flex flex-row">
+                                        <small class="fw-bold me">Calvin Flores</small>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <small class="text-muted">15:13</small>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="text-purple text-sm-start">Why did you do that?</span>
-                        </div>
-                        <div class="col-2 my-3">
-                            <div class="d-flex flex-column bd-highlight mb-3">
-                                <span class="text-muted text-lg-start">15:20</span>
-                                <span class="bg-purple-icon"> 2 </span>
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-1">
+                                    <div class="d-flex flex-row">
+                                        <small class="text-purple text-sm-start">Hi, bro! Come to my house!</small>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <span class="bg-purple-icon">1</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-row row my-3">
-                        <div class="col-4">
-                            <img src="./style/images/photos/photo1.png" class="img-fluid" alt="..."/>
+
+                    <div class="d-flex flex-row row my-3 me-0">
+                        <div class="col-4 col-lg-4">
+                            <img src="./style/images/photos/photo6.png" class="img-fluid" alt="..."/>
                         </div>
-                        <div class="col-6 my-3">
-                            <div class="d-flex flex-row">
-                                <span class="fw-bold text-lg-start">Theresa Webb</span>
-                                <img src="style/images/Bell.svg" class="img-fluid ms-1" alt="..."/>
+                        <div class="col-8 col-lg-8">
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-2">
+                                    <div class="d-flex flex-row">
+                                        <small class="fw-bold me">Soham Henry</small>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <small class="text-muted">15:13</small>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="text-purple text-sm-start">Why did you do that?</span>
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-1">
+                                    <div class="d-flex flex-row">
+                                        <small class="text-muted text-sm-start">Me: Bro, just fuck off</small>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <img src="./style/images/read.svg" alt="..." class="img-fluid"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-2 my-3">
-                            <div class="d-flex flex-column bd-highlight mb-3">
-                                <span class="text-muted text-lg-start">15:20</span>
-                                <span class="bg-purple-icon"> 2 </span>
+                    </div>
+
+                    <div class="d-flex flex-row row my-3 me-0">
+                        <div class="col-4 col-lg-4">
+                            <img src="./style/images/photos/photo7.png" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-8 col-lg-8">
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-2">
+                                    <div class="d-flex flex-row">
+                                        <small class="text-black fw-bold me"><a href="incomingCall.html">Mother </a><span class="text-danger">❤</span></small>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <small class="text-muted">15:13</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9 col-lg-9 mt-1">
+                                    <div class="d-flex flex-row">
+                                        <small class="text-muted text-sm-start">Me: Yes, of course come, ... </small>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-lg-3 mt-2">
+                                    <div class="d-flex flex-column bd-highlight">
+                                        <img src="./style/images/unread.svg" alt="..." class="img-fluid"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </aside>
-            <main class="col-sm-9">
+            <main class="col-md-6 col-lg-9 col-sm-9 ">
                 <div class="splashscreen">
                     <span class="text-muted">Please select a chat to start messaging</span>
                 </div>

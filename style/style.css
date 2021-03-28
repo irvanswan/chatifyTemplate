@@ -1,32 +1,40 @@
 /* importing font family rubik */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
 
-main{
-    height: 100vh;
-}
 /* variable color root */
 :root{
     --purple : #7E98DF;
     --lightpurple :#99b0f0;
 }
 
+small a{
+    text-decoration: none;
+    color: black;
+}
+
 /* Set font pada content di body */
 body{
     font-family: 'Rubik', sans-serif;
+    max-height: 100vh;
 }
 
 /* background color purple */
 .bg-purple{
     background-color: var(--purple);
 }
-aside #menu{
+/* hidden menu */
+aside #menu, #call-dialog{
     display: none;
 }
+
+/* for icon */
 .icon{
     margin: 0;
     padding: 0;
     border: none;
 }
+
+/* background color purple */
 .bg-purple-icon{
     background: #7E98DF;
     border-radius: 50%;
@@ -34,6 +42,7 @@ aside #menu{
     text-align: center;
     color: white;
 }
+
 /* Splash screen */
 .splashscreen{
 	display: flex;
@@ -41,28 +50,26 @@ aside #menu{
     justify-content: center;
     height: 100vh;
 }
-.photo{
-    max-height: 3em;
-}
-
-.head-list{
-    height: 10vh;
-}
-/* aside */
-aside{
-    max-height: 100vh;
-}
 
 /* list chat list*/
 .list{
     overflow-y: auto;
     overflow-x: hidden;
-    height: 80vh;
+    height: 65vh;
     padding-bottom: 1em;
 }
 
-.footer-list{
-    height: 10vh;
+/* list message */
+.list-message{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 76vh;
+    padding-bottom: 1em;
+}
+
+/* for teks input message */
+.footer-list, .head-list{
+    height: 12vh;
 }
 
 /* list call history*/
@@ -73,9 +80,12 @@ aside{
     padding-bottom: 1em;
 }
 
+main, aside{
+    max-height: 100vh;
+}
+
 /* navigation active */
 .active{
-    background-color: var(--purple);
     padding: 1em;
     width: 100%;
     color: white;
@@ -127,22 +137,60 @@ aside{
     color: var(--purple);
 }
 
+.dialog-call{
+    border-radius: 30px;
+}
+
 /* styling search box */
 .search-box{
     border: none;
-    margin: 0;
-    padding: 0;
+    height: 3em;
+    padding: 1em;
 }
 
+/* btn-group-call*/
+.call{
+    border: none;
+}
+.call:hover{
+    border-radius: 20px;
+}
+/* icon search */
+.icon{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* field search */
+.field{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 /* layout filter */
 .filter{
     text-align: center;
     max-width: auto;
     overflow-x: scroll;
     overflow-y: hidden;
+    min-height: 10vh;
     max-height: auto;
 }
 
+/* Menu panel */
+.menu-panel-right{
+    height: auto;
+    width: auto;
+}
+.menu-panel-right{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.bg-image{
+    background-image: url('./images/photos/Background.png') ;
+    background-size: cover;
+    height: 60vh;
+}
 /* styling icon eye*/
 .toogle-btn{
     position: relative;
@@ -215,21 +263,16 @@ input.input-line:focus{
         min-height: 100vh;
         min-width: 60vw;
         border-radius: 0px;
-        overflow: hidden;
     }
+
     aside{
-        min-width: 40vw;
+        max-width: 40vw;
     }
 }
 
 /* media on layar maximal 768 pixel */
 @media (max-width: 600px){
-    main{
-        display: none;
-    }
     aside{
-        margin: 0;
-        min-width: 40vw;
-        max-height: auto;
+        max-width: 40vw;
     }
 }
