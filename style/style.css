@@ -70,6 +70,7 @@ aside #menu, #call-dialog{
 /* for teks input message */
 .footer-list, .head-list{
     height: 12vh;
+    width: 100%;
 }
 
 /* list call history*/
@@ -175,7 +176,10 @@ main, aside{
     min-height: 10vh;
     max-height: auto;
 }
-
+.photo{
+    height: 4em;
+    width: 4em;
+}
 /* Menu panel */
 .menu-panel-right{
     height: auto;

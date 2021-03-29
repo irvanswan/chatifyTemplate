@@ -16,10 +16,7 @@
   <body class="bg-light overflow-hidden">
     <section class="container-fluid overflow-hidden">
         <div class="row">
-            <aside class="d-block col-sm-5 col-md-5 col-lg-3 px-4 bg-white">
-                <div class="position-absolute menu-panel">
-                    
-                </div>
+            <aside class="d-none d-sm-block col-sm-5 col-md-5 col-lg-3 px-4 bg-white">
                 <div class="d-flex align-items-center mt-4 mb-5">
                     <div id="menu" class="flex-grow-1 me-5">
                         <div class="d-flex justify-content-between mb-2 p-3 bg-purple rounded-pill">
@@ -30,7 +27,6 @@
                     </div>
                     <span onclick="myFunction()" class="text-purple flex-grow-1 text-start" id="chatify"><h4>Chatify</h4></span>
                     <div class='ps-0 float-md-end'><img src="./style/images/Menu.svg" alt="..."/></div>
-                    
                 </div>
                 <div class="d-flex align-items-center m-1">
                     <div class="input-group w-100 h-100">
@@ -228,24 +224,17 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="position-absolute top-50 start-50 translate-middle col-lg-2 col-md-4 col-sm-5 col-5 " id="call_panel">
-                <div class="card bg-image">
-                    <div class="card-body justify-content-center">
-
-                    </div>
-                </div>
-            </div> -->
-
-            <main class="d-none d-sm-block col-md-7 col-lg-9 p-0">
-                <div class="head-list bg-white d-block">
+            <main class="col-sm-7 col-md-7 col-lg-9 p-0">
+                <div class="head-list bg-white">
                     <div class="row m-0" onclick="call()">
-                        <img src="./style/images/photos/photo7.png" class="col-sm-4 col-md-2 col-lg-1 col-xl-1 mt-2 ms-2" alt="..."/>
-                        <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10 mt-3">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 mt-2 ms-2">
+                            <img src="./style/images/photos/photo7.png" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-10 mt-3">
                             <span class="fw-bold">Mother <span class="text-danger">❤</span></span><br>
                             <small class="text-purple">Online</small>
                         </div>
-                        <div class="col-sm col-md col-lg-auto mt-4 col-xl-auto float-end">
+                        <div class="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto mt-4">
                             <img src="./style/images/Profilemenu.svg" alt="..."/>
                         </div>
                     </div>
@@ -260,7 +249,7 @@
                         <img src="./style/images/emoticon.svg" class="input-group-text search-box bg-light img-fluid" alt="...">
                         <img src="./style/images/camera.svg" class="input-group-text search-box field bg-light img-fluid" alt="...">
                     </div>
-                    <div class="d-sm-none d-md-block position-absolute col-lg-2 col-md-3 col-sm-4 col-4 bottom-0 end-0 pb-0 m-5 pe-5">
+                    <div class="d-sm-block position-absolute col-lg-2 col-md-3 col-sm-5 col-8 bottom-0 end-0 pb-0 m-5 pe-5">
                         <div class="shadow-sm p-3 bg-purple menu-panel-right align-middle mt-5 me-5">
                             <div class="list-group">
                                 <div class="d-flex justify-content-start mb-1">
